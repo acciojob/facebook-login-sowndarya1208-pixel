@@ -11,7 +11,7 @@
 	
 }
 /* Styles for .left-page and .right-page remain the same as above */
-.left-page{
+.left{
 	padding:20px;
 	color:blue;
 	width:450px;
@@ -62,4 +62,7 @@ input{
 }
 a{
 	color:#1877f2;
+}
+.left-img{
+	height:100px;
 }
