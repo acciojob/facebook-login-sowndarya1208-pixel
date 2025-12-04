@@ -1,1 +1,65 @@
 /*  your css code here. If applicable */
+.page-container-grid {
+    
+	background-color:#f6f6f6;
+	display:flex;
+	align-items:center;
+	width:100px;
+	height:100vh;
+    gap: 10px; /* Optional: Space between the columns */
+    width: 100%;
+	
+}
+/* Styles for .left-page and .right-page remain the same as above */
+.left-page{
+	padding:20px;
+	color:blue;
+	width:450px;
+	margin-top:70px;
+	display:inline-block;
+}
+.right-page{
+	border:none solid white;
+	background-color:white;
+	text-align:center;
+	width:225px;
+	height:200px;
+	
+}
+#email,#password{
+width:200px;
+	padding:5px;
+}
+button{
+	background-color:blue;
+	border:none;
+	color:white;
+	width:210px;
+	font-size:10px;
+	height:25px;
+	border-radius:5px;
+}
+.signup{
+	background-color:#42b72a;
+	font-size:10px;
+	height:25px;
+	border-radius:5px;
+}
+form{
+	display:flex;
+	width:300px;
+	background-color:white;
+	padding:20px;
+	border-radius:5px;
+	box-shadow:0 0 10px #ccc;
+	flex-direction:column;
+	gap:10px;
+}
+input{
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding:10px 20px;
+}
+a{
+	color:#1877f2;
+}
