@@ -1,68 +1,106 @@
-/*  your css code here. If applicable */
-.page-container-grid {
-    
-	background-color:#f6f6f6;
-	display:flex;
-	align-items:center;
-	width:100px;
-	height:100vh;
-    gap: 10px; /* Optional: Space between the columns */
-    width: 100%;
-	
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Styles for .left-page and .right-page remain the same as above */
-.left{
-	padding:20px;
-	color:blue;
-	width:450px;
-	margin-top:70px;
-	display:inline-block;
+
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.right-page{
-	border:none solid white;
-	background-color:white;
-	text-align:center;
-	width:225px;
-	height:200px;
-	
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Added gap between left and right sections */
 }
-#email,#password{
-width:200px;
-	padding:5px;
+
+/* Styling the Left Section */
+.left {
+    width: 450px;
+    margin-top: 70px;
+    display: inline-block;
 }
-button{
-	background-color:blue;
-	border:none;
-	color:white;
-	width:210px;
-	font-size:10px;
-	height:25px;
-	border-radius:5px;
+
+.left img {
+    /* Adjust logo size if necessary, typically large on FB login */
+    width: 300px; 
+    margin-bottom: 10px;
 }
-.signup{
-	background-color:#42b72a;
-	font-size:10px;
-	height:25px;
-	border-radius:5px;
+
+.left p {
+    font-size: 24px;
+    color: #0e0e0e;
 }
-form{
-	display:flex;
-	width:300px;
-	background-color:white;
-	padding:20px;
-	border-radius:5px;
-	box-shadow:0 0 10px #ccc;
-	flex-direction:column;
-	gap:10px;
+
+/* Styling the Right Section (contains the form and signup button) */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between form and signup button */
 }
-input{
-	border:1px solid #ccc;
-	border-radius:5px;
-	padding:10px 20px;
+
+/* Styling the Form itself */
+form {
+    display: flex;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    flex-direction: column;
+    gap: 10px;
 }
-a{
-	color:#1877f2;
+
+/* Styling all Inputs inside the form */
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Ensure inputs take full width of the form padding */
 }
-.left-img{
-	height:100px;
+
+/* Styling the Log In Button */
+form button[type="submit"] {
+    background-color: #1877f2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%; /* Takes up all width of the right container (form width) */
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling the Forgotten Account Link */
+a {
+    text-decoration: none; /* No underline */
+    color: #1877f2;
+    text-align: center; /* Center the link within the form */
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the Create New Account Button */
+.signup {
+    background-color: #42b72a; /* Note: The user provided 42b72a without a # */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content; /* Sits nicely outside the form */
 }
